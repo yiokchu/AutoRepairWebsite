@@ -1,35 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-            LLL AUTO REPAIR 
-        </title>
-        <link rel="stylesheet" href="./CSS/styles.css">
-        <link rel="icon" href="./Images/Car-repair.svg">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L.L.L Auto Repair</title>
+    <link rel="icon" href="./Images/Car-repair.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+        .navbar.justify-content-center.navbar-dark.bg-black li a {
+            color: white;
+            font-family:system-ui, sans-serif;
+        }
 
-    <body>
-        <div class="container">
-            <div class="mobile">
-                <section style="background-image: url(Images/Image1.jpg); background-size: 150% 100%">
-                    <p class="title"> L.L.L Auto Repair </p>
-                    <a href="contact.html" class="button"> CONTACT </a>
-                    <a href="location.html" class="button2"> LOCATION </a>
-                    <a href="price.html"> <img src="Images/price.png" class="price" alt="Price" /> </a>
-                </section>
-                <section><img src="Images/Image2.jpg" class="cover" alt="Image 2" /></section>
-                <section><img src="Images/Image3.jpg" class="cover" alt="Image 3" /></section>
+        .bg-img{
+            background-size:170%;
+            background-image:url(./Images/Image3.jpg);
+        }
+    </style>
+    <!--font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; -->
+    <nav class="navbar justify-content-center navbar-dark bg-black">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#location">LOCATION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div style="margin-top: -3em;" id="home">
+        <div class="bg-img">
+            <p class="h1 text-center" style="font-family:system-ui, sans-serif; font-weight: bold; font-size:5em; color: white; padding-top: 3em; text-shadow: 2px 2px black;">L.L.L Auto Repair</p>
+            <p class="h4 text-center" style="font-family:monospace; color: white; text-shadow: 2px 2px black;" > Repair Shop</p>
+
+            <p class="h6 text-center p-5 mt-5" style="font-family:monospace; color: white; text-shadow: 2px 2px black;"> A full-service automotive repair shop that can handle all <br>
+            mechanical work on your vehicle no matter what make or origin</p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <video class="w-100" autoplay loop muted> 
+            <source src="./Images/Services.mp4" type="video/mp4"> 
+        </video>
+    </div>
+
+    <div id="location" class="location bg-black" >
+        <p class="h1 text-center" style="font-family:system-ui, sans-serif; font-weight: bold; font-size:3em; color: white; padding-top: 1em;"> LOCATION </p>
+        <p class="h4 text-center" style="font-family:monospace; color: white;"> 528 President St, <br> Brooklyn, NY 11215</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.8401464864387!2d-73.98778168459607!3d40.67749097933576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a55736f35d7%3A0xb4274c643e585bd4!2slll%20Auto%20Repair!5e0!3m2!1sen!2sus!4v1657133753655!5m2!1sen!2sus" width="80%" height="250" style="border:0; padding-left: 14em; padding-top: 3em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="contact" id="contact" style>
+        <div class="row">
+            <div class="col">
+                <p class="h1 text-center" style="font-family:system-ui, sans-serif; font-weight: bold; font-size:3em; padding-top: 1em;"> CONTACT </p>
+                <p class="h4 text-center" style="font-family:monospace; padding-top: 1em;"> Phone: <a href="tel:+7184889244" style="color: black"> (718) 488-9244 </a></p>
+
             </div>
-            <div class="desktop">
-
+            <div class="col">
+                <p class="h3" style="font-family:system-ui, sans-serif; font-weight: bold; padding-top: 3em; padding-left: 5em; padding: 1em;"> Hours </p>
+                <p style="font-family:monospace; padding-left: 7em;"> 
+                    Monday 9AM – 6PM <br>
+                    Tuesday 9AM – 6PM <br>
+                    Wednesday 9AM – 6PM <br>
+                    Thursday 9AM – 6PM <br>
+                    Friday 9AM – 6PM <br>
+                    Saturday 9AM – 6PM <br>
+                    Sunday <span style="color: red; font-family: system-ui, sans-serif; font-weight: bold;">Closed </span></p>
+        
             </div>
         </div>
+       
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     </body>
-
-
-    <footer>
-        <p class="foot"> © Copyright 2022. All Rights Reserved. </p>
-    </footer>
 </html>
